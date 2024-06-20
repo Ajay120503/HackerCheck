@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon" sizes="192x192" href="img/skull.svg">
+    <title>HackerCheck</title>
+</head>
+
+<body>
+    <nav class="navbar-container">
+        <div class="company-icon">
+            <i class="com-icon fa-solid fa-earth-americas"></i>
+            <p class="title">HackerCheck</p>
+        </div>
+        <div class="bar-container">
+            <div class="menu head-box">
+                <i class="head fa-solid fa-skull-crossbones"></i>
+            </div>
+            <div class="button"><button class="disabled-btn inner-button" type="button"><i
+                        class="icon laptop-icon fa-solid fa-laptop"></i></button>
+            </div>
+            <div class="search-bar">
+                <button class="search-btn">
+                    <i class="search-icon search-icon-hover fa-solid fa-magnifying-glass"></i>
+                </button>
+                <form action="#" role="search">
+                    <input type="text" autocomplete="off" class="search search-hidde" placeholder="Search...">
+                    <div class="result-box">
+                        <!-- <ul class="result-keys">
+                            <li class="key"></li>                   
+                        </ul> -->
+                    </div>
+                </form>
+            </div>
+            <div class="hacker-check-img-box">
+                <img class="hacker-check-img" src="img/hacker-check.gif" alt="" srcset="">
+            </div>
+            <ul class="icons hidde">
+                <li class="icon "><a href="#home"><i class="fa fa-solid fa-house"></i> Home</a></li>
+                <li class="icon "><a href="#about"><i class="fa fa-solid fa-droplet"></i> About</a></li>
+                <li class="icon user"><a href="#account"><i class="fa fa-solid fa-user"></i> Acct <i
+                            class="plus-icon fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="account account-hidde">
+                        <li class="account-item" id="sign-up-form">
+                            <i class="account-icon fa-solid fa-cloud-arrow-down"></i>Sign up
+                            <a href="">
+                            </a>
+                        </li>
+                        <li class="account-item" id="log-in-form">
+                            <i class="account-icon fa-solid fa-right-to-bracket"></i>Log in
+                            <a href="">
+                            </a>
+                        </li>
+                        <li class="account-item" id="log-out-btn">
+                            <i class="account-icon fa-solid fa-right-from-bracket"></i>Log Out
+                            <a href="">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="icon "><a href="#services"><i class="fa-solid fa-gear"></i></i> Service</a></li>
+                <li class="icon "><a href="#contact"><i class="fa fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sign-up-form-box sign-up-form-box-hidde">
+        <form action="/hackerCheck/index.html" method="post" id="sign-form">
+            <h1 class="sign-up-title">Sign up</h1>
+            <div class="sign-up-item">
+                <p class="error-display error-position1" id="username-or-email-error"></p>
+                <input type="text" id="username-or-email" class="sign-up-input" placeholder="email">
+            </div>
+            <div class="sign-up-item">
+                <p class="error-display error-position2" id="password-error"></p>
+                <input type="password" id="password" class="sign-up-input" placeholder="password">
+            </div>
+            <div class="sign-up-item">
+                <p class="error-display error-position3" id="confirm-password-error"></p>
+                <input type="password" id="confirm-password" class="sign-up-input" placeholder="confirm password">
+            </div>
+            <div class="sign-up-item">
+                <input type="submit" value="Sign up" class="sign-up-input sign-up-input-btn">
+            </div>
+            <p class="suggest-password">Suggest password ?<a class="click-for-suggest-password" href="/">Click</a></p>
+        </form>
+    </div>
+
+    <div class="log-in-form-box log-in-form-box-hidde">
+        <form action="/hackerCheck/index.html" method="post" id="log-form">
+            <h1 class="log-in-title">Log in</h1>
+            <div class="log-in-item">
+                <p class="error-display error-position1" id="-username-error"></p>
+                <input type="text" id="-username" class="log-in-input" placeholder="email">
+            </div>
+            <div class="log-in-item">
+                <p class="error-display error-position2" id="-password-error"></p>
+                <input type="password" id="-password" class="log-in-input" placeholder="password">
+            </div>
+            <div class="log-in-item">
+                <input type="submit" value="Log in" class="log-in-input log-in-input-btn">
+            </div>
+            <p class="forgot-password">forgot password ? <a class="click-for-forgot-password" href="">Click</a></p>
+        </form>
+    </div>
+
+    <div class="main-body" id="home">
+        <div class="top-icon">
+            <i class="skull-top-icon fa-solid fa-skull"></i>
+            <i class="skull-top-icon fa-solid fa-wifi" style="color: #2c8383;"></i>
+            <i class="skull-top-icon fa-solid fa-laptop" style="color: #723c8fe2;"></i>
+            <i class="skull-top-icon fa-solid fa-camera" style="color: #7278ae;"></i>
+            <i class="skull-top-icon fa-solid fa-phone" style="color: #65d6a0;"></i>
+            <i class="skull-top-icon fas fa-unlock" style="color: #6c6c6c;"></i>
+        </div>
+        <div class="section-title-box">
+            <h1 class="static-text">I,m a <span class="auto-type dynamic-text"></span></h1>
+        </div>
+        <div class="sections">
+
+            <div class="card">
+                <div class="img-container">
+                    <img loading="lazy" loading="lazy"
+                        src="https://img.freepik.com/free-vector/hacker-activity-concept-with-man-illustration_23-2148530633.jpg?w=740&t=st=1718904208~exp=1718904808~hmac=854e30785ebde0d395666c48b81af7c8377ed9ef2b46788a1255c06135846dab"
+                        alt="" />
+                </div>
+                <div class="card-details">
+                    <p class="section-title card-title">How to Hack <span class="topic-title">Wi-Fi Password</span></p>
+                    <p class="information-about-topic">Update soon...
+                        <strong class="extra-info-about-topic">Learn in Deaitle <a class="link"
+                                href="hack-wifi.html">Click</a></strong>
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-container">
+                    <img loading="lazy"
+                        src="https://img.freepik.com/free-vector/illustrated-hacker-activity-concept_23-2148534299.jpg?t=st=1718908005~exp=1718911605~hmac=ea0eed591886ede7fee5ab692ac855dadabaa915032876a5d56a402c6e2e7b10&w=740"
+                        alt="" />
+                </div>
+                <div class="card-details">
+                    <p class="section-title card-title">How to Hack <span class="topic-title">Android Phone</span></p>
+                    <p class="information-about-topic">Update soon...
+                        <strong class="extra-info-about-topic">Learn in Deaitle <a class="link"
+                                href="android-hacking.html">Click</a></strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-container">
+                    <img loading="lazy"
+                        src="https://img.freepik.com/free-vector/cute-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-icon-isolated-flat_138676-7079.jpg?t=st=1718908812~exp=1718912412~hmac=6080e2800b7669c20818229bcd2a1d4d2cc66fd3d52be183fbe169e322eff764&w=740"
+                        alt="" />
+                </div>
+                <div class="card-details">
+                    <p class="section-title card-title">How to Hack <span class="topic-title">Computer</span></p>
+                    <p class="information-about-topic">Update soon...
+                        <strong class="extra-info-about-topic">Learn in Deaitle <a class="link"
+                                href="computer-hacking.html">Click</a></strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-container">
+                    <img loading="lazy"
+                        src="https://img.freepik.com/free-vector/hacker-activity-concept_23-2148543435.jpg?t=st=1718908097~exp=1718911697~hmac=e0f1e9474bd7c7d64ebc36c655e0c1e0d0a7e0898acdfb17e7755972c64afc69&w=996"
+                        alt="" />
+                </div>
+                <div class="card-details">
+                    <p class="section-title card-title">How to Hack <span class="topic-title">CCTV</span></p>
+                    <p class="information-about-topic">Update soon...
+                        <strong class="extra-info-about-topic">Learn in Deaitle <a class="link"
+                                href="cctv-hacking.html">Click</a></strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-container">
+                    <img loading="lazy"
+                        src="https://img.freepik.com/free-vector/hand-drawn-anonymous-hacker-concept_23-2147897289.jpg?t=st=1718908737~exp=1718912337~hmac=6abc94ac2d780e77a575e91c6232774c8a394c5f5543a49c378c2272ef8e752b&w=740"
+                        alt="" />
+                </div>
+                <div class="card-details">
+                    <p class="section-title card-title">Different types <span class="topic-title">Pishing
+                            Attacks</span></p>
+                    <p class="information-about-topic">Update soon...
+                        <strong class="extra-info-about-topic">Learn in Deaitle <a class="link"
+                                href="pishing-attacks.html">Click</a></strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card last-card">
+                <div class="img-container" style="background: #a6dfcd;">
+                    <img loading="lazy"
+                        src="https://img.freepik.com/free-vector/hacker-activity-with-laptop_23-2148555133.jpg?t=st=1718908482~exp=1718912082~hmac=05baf5ee4c5555a60ff14b5b27656a7d94a596407bc08312c0ebbc88f6b91e86&w=740"
+                        alt="" />
+                </div>
+                <div class="card-details">
+                    <p class="section-title card-title">Another Hacking <span class="topic-title">Information</span></p>
+                    <p class="information-about-topic">Update soon...
+                        <strong class="extra-info-about-topic">Learn in Deaitle <a class="link"
+                                href="another-hacking.html">Click</a></strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="chat-room-btn-box">
+            <h2 class="chat-room-title">Chat Room for chat with <span class="exta-text-style">Random people's</span>
+            </h2>
+            <form action="/hackerCheck/index.html">
+                <input class="chat-room-btn" type="submit" value="Chat Room">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contact-section">
+            <form action="/hackerCheck/index.html" id="contact" method="post">
+                <h1 class="contact-title hover-effect">Contact</h1>
+                <div class="contact-box">
+                    <div class="contact-input">
+                        <input type="text" class="input-item" placeholder="Enter your full name">
+                    </div>
+                    <div class="contact-input">
+                        <input type="text" class="input-item" placeholder="Enter your email">
+                    </div>
+                    <div class="contact-input">
+                        <input type="text" class="input-item" placeholder="Enter your phone number">
+                    </div>
+                    <div class="contact-input-message">
+                        <textarea rows="5" cols="40" class="contact-message"
+                            placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="input-submit-btn">
+                        <input class="submit-btn" type="submit" value="Submit">
+                    </div>
+                    <i class="on-hover hidde-leaf skull-top-icon fas fa-feather-alt"
+                        style="margin:10px auto 0px auto;color: rgba(12, 171, 4, 0.925);"></i>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="bottom-line">
+        <a href="https://ajay120503.github.io/instagram.com/"><i class=" footer-icon fa-brands fa-instagram"></i></a>
+        <a href=""><i class=" footer-icon fa-brands fa-facebook"></i></a>
+        <a href=""><i class=" footer-icon fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Ajay120503/"><i class=" footer-icon fa-brands fa-github"></i></a>
+        <a href="https://www.youtube.com/channel/UCYS9sTrPpcIVDxz2yVPbuLw"><i
+                class="footer-icon fa-brands fa-youtube"></i></a>
+        <div class="side-by">
+            <p class="p1"></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        const autoType = () => {
+            let typed = new Typed(".auto-type", {
+                strings: ["Programmer", "Hacker", "Developer", "Killer", "Checker", "Monster", "Legend", "Generator"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            });
+        }
+        autoType();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
